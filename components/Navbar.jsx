@@ -125,7 +125,7 @@ const Navbar = () => {
                     <Menu as='div' className='relative text-left'>
                     <div className='flex'>
                         <Menu.Button>
-                            <Image src={session.user.image} width='45' height='45' className='rounded-full'/>
+                            <Image src={session.user.image} width='45' height='45' className='rounded-full' alt='/'/>
                         </Menu.Button>
                     </div>
 
@@ -142,8 +142,8 @@ const Navbar = () => {
                             <div className='py-1'>
                                 <Menu.Item>
                                     {({ active }) => (
-                                    <a
-                                        href='/account'
+                                    <Link
+                                        to='/account'
                                         className={classNames(
                                         active
                                             ? 'bg-gray-500 text-gray-100'
@@ -152,7 +152,7 @@ const Navbar = () => {
                                         )}
                                     >
                                         Account
-                                    </a>
+                                    </Link>
                                     )}
                                 </Menu.Item>
                                 

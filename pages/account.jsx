@@ -4,7 +4,7 @@ import {FaGithub, FaGoogle} from 'react-icons/fa'
 import Image from 'next/image'
 
 const account = () => {
-    const { data: session } = useSession()
+    const { data: session } = useSession();
     // console.log(session);
     if (session) {
       return (
